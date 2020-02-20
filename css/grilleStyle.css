@@ -1,0 +1,134 @@
+body {
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #dd4814;
+}
+
+h2 {
+  color: #dd4814
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+
+#hamburger {
+  line-height: 100%;
+  width: 100%;
+}
+
+#hamburger img {
+  width: 90%;
+}
+
+#hamburger i {
+  font-size: 30px;
+  display: block;
+  float: right;
+  margin: 10px;
+  color: #dd4814;
+}
+
+
+
+
+#menuMobile {
+  display: none;
+  clear: both;
+  background-color: #dd4814;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+#menuMobile li {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+#burger:hover #menuMobile {
+  display: block;
+}
+
+
+
+#header {
+  clear: both;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+#header img {
+  width: 100%;
+}
+
+#menuDesktop ul {
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#menuDesktop ul li {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
+#articles {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.article p {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+
+/********************* Small *****************************/
+@media screen and (min-width: 700px) {
+  #hamburger {
+    width: 20%;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  #menuDesktop ul{
+    display: flex;
+  }
+}
+
+/****************** Medium ********************/
+@media screen and (min-width: 900px) {
+  .article p{
+    margin: 20px;
+    }
+}
+
+/***************** Medium **********************/
+@media screen and (min-width: 900px) {
+  #articles {
+    margin-bottom: 30px
+  }
+}
