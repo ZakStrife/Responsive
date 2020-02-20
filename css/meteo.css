@@ -1,0 +1,80 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    overflow: auto;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+header {
+    max-width: 90%;
+    border-bottom: 3px solid black; 
+}
+
+header p img {
+    float: left;
+}
+
+#degrés {
+    font-size: 2.3em;
+    float: left;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+}
+
+
+article {
+    max-width: 90%;
+    border-bottom: 3px solid black;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+article section p:first-child {
+    font-weight: bold;
+    color: darkred;
+}
+article section p {
+    color: black;
+}
+
+
+/********************** RESPONSIVE ******************************/
+
+@media screen and (min-width:920px) {
+    header {
+        border: none;   
+    }
+
+    section {
+        display:block;
+    }
+
+    article {
+        border: none;
+        float: left;
+    }
+    
+    article section p {
+        display: block;
+        text-align: center;
+    }
+
+    body>article:nth-child(2),
+    body>article:nth-child(3),
+    body>article:nth-child(4),
+    body>article:nth-child(5),
+    body>article:nth-child(6),
+    body>article:nth-child(7),
+    body>article:nth-child(8) {
+        margin-left:6%;
+    }
+}
