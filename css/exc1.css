@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: grey;
+  display: none;
+}
+
+header {
+  padding: 50px 0;
+  text-align: center;
+}
+
+section {
+  border: 1px solid burlywood;
+  background-color: gainsboro;
+  padding: 15px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 640px) {
+  section {
+    width: calc(100% / 3);
+    float: left;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    display: block;
+  }
+}
+
+@media print {
+  header {
+    display: block;
+  } v
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
